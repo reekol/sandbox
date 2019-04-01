@@ -1,31 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <meta name="author" content="Aurelio De Rosa">
-      <title>Geolocation API Demo by Aurelio De Rosa</title>
-      <link rel="stylesheet" href="../shared.css" />
-      <style>
-         .g-info
-         {
-            font-weight: bold;
-         }
-      </style>
-   </head>
    <body>
-      <a href="https://code.tutsplus.com/tutorials/an-introduction-to-the-geolocation-api--cms-20071">Go back to the article</a>
-
-      <span id="g-unsupported" class="api-support hidden">API not supported</span>
-
-      <h1>Geolocation API</h1>
+      
       <div class="buttons-wrapper">
          <button id="button-get-position" class="button">Get current position</button>
          <button id="button-watch-position" class="button">Watch position</button>
          <button id="button-stop-watching" class="button">Stop watching position</button>
       </div>
 
-      <h2>Information</h2>
+      
       <div id="g-information">
          <ul>
             <li>
@@ -47,11 +30,6 @@
       <div id="log"></div>
       <button id="clear-log" class="button">Clear log</button>
 
-      <small class="author">
-         Demo created by <a href="https://www.audero.it">Aurelio De Rosa</a>
-         (<a href="https://twitter.com/AurelioDeRosa">@AurelioDeRosa</a>).<br />
-         This demo is part of the <a href="https://github.com/AurelioDeRosa/HTML5-API-demos">HTML5 API demos repository</a>.
-      </small>
 
       <script>
          if (!(window.navigator && window.navigator.geolocation)) {
